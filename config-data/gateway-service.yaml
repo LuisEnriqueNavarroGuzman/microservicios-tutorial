@@ -17,14 +17,14 @@ eureka:
             enable: true
         routes:
           id: usuario-service
-          uri: lb://usuario/service
+          uri: lb://usuario-service
           predicates:
             - Path=/usuario/**
           id: carro-service
-          uri: lb://carro/service
+          uri: lb://carro-service
           predicates:
             - Path=/carro/**
           id: usuario-moto
-          uri: lb://usuario/moto
+          uri: lb://moto-service
           predicates:
             - Path=/moto/**                        
